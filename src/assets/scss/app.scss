@@ -4,6 +4,11 @@
 .navbar {
   border-bottom: 1px solid #eee;
   margin-bottom: 8px;
+  
+  .input.username.unvalid {
+    border: 1px solid red;
+  }
+  
 }
 
 .gh-username img {
