@@ -10,14 +10,6 @@
   }
 }
 
-.container{
-  .profile-container, .events-container{
-    &.is-hidden{
-      display: none;
-    }
-  }
-}
-
 .gh-username img {
   vertical-align: middle;
   width: 32px;
@@ -29,4 +21,29 @@
 
 .timeline .timeline-item {
   padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .profile-container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .profile-container{
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .profile-container{
+    width: 30%;
+  }
 }
