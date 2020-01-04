@@ -10,6 +10,14 @@
   }
 }
 
+.container{
+  .profile-container, .events-container{
+    &.is-hidden{
+      display: none;
+    }
+  }
+}
+
 .gh-username img {
   vertical-align: middle;
   width: 32px;
