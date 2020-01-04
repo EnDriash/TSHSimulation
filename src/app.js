@@ -14,16 +14,13 @@ class App {
 
       fetch(url)
         .then(response => response.ok ? response.json() : Promise.reject(response))
-
         .then(body => {
           this.profile = body;
           this.update_profile();
-
         }).then(() => {
 
           fetch(url + '/events/public')
             .then(response => response.json())
-
             .then(eventsList => {
               eventsList = eventsList.filter((elem) => {
                 return elem.type.includes('PullRequest');
